@@ -1,18 +1,17 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Flex, Image, Box, VStack, Text } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
-      </VStack>
+    <Container maxW="container.xl" p={4}>
+      <Flex justifyContent="space-between" alignItems="center" mb={4}>
+        <Image src="/youtube-logo.svg" alt="YouTube Logo" boxSize="100px" />
+      </Flex>
+      <Box>
+        <VStack spacing={4}>
+          <Text fontSize="2xl">Welcome to YouTube</Text>
+          <Text>Explore videos, channels, and more.</Text>
+        </VStack>
+      </Box>
     </Container>
   );
 };
